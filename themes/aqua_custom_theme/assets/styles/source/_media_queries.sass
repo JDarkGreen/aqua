@@ -1,0 +1,116 @@
+
+/************************************************************************************/
+/*-- ARCHIVO PARCIAL DE MEDIA QUERIES  ---------------------------------------------*/
+/************************************************************************************/
+
+//568px
+@media ( max-width: 568px )
+	
+	//********************************
+	//* WRAPPER
+	//********************************
+	.pageWrapperLayout
+		padding: 0 15px
+
+	//Sidebar Mobile
+	.sidebarMobile
+		padding: 10px
+
+	//********************************
+	//* HEADER
+	//********************************
+
+	.mainHeader
+		background : white
+		display    : flex
+		left       : 0
+		padding    : 10px 15px
+		right      : 0
+		z-index    : 999
+		//Iconos de Navegación
+		.icon-header
+			color      : #0070B8
+			font-size  : 40px 
+			height     : 40px
+			line-height: 1
+		//Logo
+		.logo 
+			max-width: inherit
+			margin   : 0 10px 
+
+
+	//NAVIGATION
+	nav.mainNavigation 
+		ul.main-menu 
+			li
+				display: block
+				width  : 100% 
+				a 
+					border: none
+
+	//********************************
+	//* SECCIONES COMUNES
+	//********************************
+	
+
+	/**[Carousel Clientes]**/
+	.sectionCommon__clients
+		padding : 20px 0
+
+
+	//********************************
+	//* PÁGINA INICIO
+	//********************************	
+	
+	//Slider Home
+	#slider-home 
+		figure.image-featured
+			background-position: top left 
+			background-size    : cover 
+			height             : 310px
+		//Contenido
+		.slider-content 
+			padding: 0 10px
+			bottom : 25%
+			h2 , span 
+				font-size: 20px
+
+	/********************************
+	//* PÁGINA INICIO
+	//*******************************/
+	.pageNosotros 
+		figure.featured-image
+			max-width: initial
+
+	/********************************
+	//* PÁGINA PRODUCTO
+	//*******************************/
+	.itemProduct
+		width: auto 
+
+	/********************************
+	//* PÁGINA PROYECTO
+	//*******************************/
+	.itemProject
+		margin: 0 0 10px 
+		width : auto 
+
+	/********************************
+	//* PÁGINA CONTACTO
+	//*******************************/
+	.pageContacto__form
+		padding: 20px 10px
+
+	.pageContacto__form__group 
+		label , input , textarea
+			width: 100%
+
+
+	//********************************
+	//* FOOTER 
+	//********************************/
+	.mainFooter
+		height: 180px
+		ul , ul.menu-footer
+			padding: 0 
+			

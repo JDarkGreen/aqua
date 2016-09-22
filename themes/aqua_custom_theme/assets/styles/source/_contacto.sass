@@ -1,0 +1,117 @@
+
+/***************************************************************************************/
+/**-- SECCION RELACIONADA A PAGINA CONTACTO  -----------------------------------------**/
+/***************************************************************************************/
+
+
+//Mapa
+#canvas-map
+	height: 365px
+	width : 100%
+
+/**[ Menú de Contacto ]**/
+ul.menuContacto
+	list-style-type: none 	
+	margin         : 0 
+	padding        : 0 
+	li 
+		color      : black 
+		font-family: "SerifBeta", sans-serif
+		font-weight: 600
+		margin     : 0 auto 10px
+
+		//Clase mas espacio
+		&.more-space 
+			margin: 24px 0
+
+		//Icono
+		i.icon-contact
+			+border-radius( 50% )
+			align-items    : center 
+			border         : 1px solid silver 
+			color          : #D0A63E
+			display        : inline-flex 
+			height         : 51px 
+			justify-content: center
+			margin         : 0 16px 0 0
+			vertical-align : middle
+			width          : 51px
+
+		//Párrafo
+		p
+			display       : inline-block
+			margin        : 0 
+			vertical-align: middle 
+
+		//Span
+		span 
+			color : #D0A63E
+
+
+/**[ Menu de Redes Sociales ]**/
+ul#socialLinksMenuContacto
+	display        : inline-block
+	list-style-type: none 
+	margin         : 0
+	padding        : 0 
+	li 
+		display: inline-block
+		margin : 0 0 10px 10px
+		a 
+			display        : block 
+			text-decoration: none !important
+			//Iconos
+			i 
+				+border-radius( 50% )
+				+transition( all 600ms ease-in-out )
+				align-items    : center
+				background     : #F8F8FA
+				color          : #D0A63E
+				display        : flex 
+				height         : 31px 
+				justify-content: center
+				width          : 31px 
+			
+			&:hover 
+				i 
+					+scale( 1.2 )
+
+/**[ Sección de Formulario ]**/
+.pageContacto__formulary
+	background: #F0F0F0
+	padding   : 40px 0 60px
+
+//Formulario
+#form-contacto
+	font-family: "SerifBeta", sans-serif
+	margin     : 0 auto
+	max-width  : 676px
+	width      : 100%
+
+//Inputs y textareas
+.pageContacto__form__group
+	margin : 0 auto 14px
+	input , textarea 
+		+border-radius( 2px )
+		border     : none 
+		color      : #C3C3C3
+		line-height: 1em 
+		padding    : 11px
+		width      : 100%
+	//only textarea 
+	textarea 
+		height    : 88px
+		max-height: 88px
+
+//Botón enviar formulario
+button#send-form
+	background : black 
+	border     : none 
+	color      : white
+	line-height: 1em
+	padding    : 10px 15px
+	+transition( all 600ms ease-in-out )
+	//:hover
+	&:hover 
+		+scale( 1.2 ) 
+

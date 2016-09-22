@@ -1,0 +1,262 @@
+/** Importar Compass **/
+@import "compass/css3"
+
+/** Importar Fuentes **/
+
+//Roboto
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+
+//Montserrat
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700'
+
+//Mr de Haviland
+@import 'https://fonts.googleapis.com/css?family=Mr+De+Haviland'
+
+
+/** Importar Archivo variables Colores **/
+@import "colors"
+
+
+/***************************************************************************************/
+/**-------------------------- RESET --------------------------------------------------**/
+/***************************************************************************************/
+
+body,html
+	font-family: "Arial" , sans-serif
+	font-size  : 16px
+	width      : 100% 
+
+/***************************************************************************************/
+/**------------------------ Overwhite Placeholder  -----------------------------------**/
+/***************************************************************************************/
+
+::-webkit-input-placeholder
+	color: rgba( 0 , 0 , 0 , .5 )
+
+::-moz-placeholder 
+	color  : rgba( 0 , 0 , 0 , .5 )
+	opacity: 1
+
+/***************************************************************************************/
+/**-------------------------- KEYFRAMES  ---------------------------------------------**/
+/***************************************************************************************/
+
+//PULSE
++keyframes( pulse )
+	0%, 100%
+		+translateX( -5px )
+	50%
+		+translateX( 0 )
+
+//EXPAND
++keyframes( expand )
+	0%, 100%
+		+scale( 1.1 )
+	50%
+		+scale( 1.0 )
+
+//CONTRACT
++keyframes( contract )
+	0%
+		+scale( 0 )
+	100%
+		+scale( 1 )
+
+//FLIPIN 
++keyframes( flipInY )
+	0%	
+		+rotateY( -90deg )
+		+opacity( 0 )
+	100%
+		+rotateY( 0deg )
+		+opacity( 1 )
+
+//OPACITY 
++keyframes( opacityInOut )
+	0%
+		+opacity( 0 )
+	100%
+		+opacity( 1 )
+
+//OVERLAYZOOM
++keyframes( overlayZoom )
+	0%
+		background-size: 100% 100%
+	100%
+		background-size: 140% 140%
+
+//HEARTHBEAT
++keyframes( heartbeat )
+	0% , 40% 
+		+scale( .75 )
+	20% , 60% , 100%
+		+scale( 1 )
+
+
+/***************************************************************************************/
+/**--  SECCIONES COMUNES Y WRAPPER GENERAL -------------------------------------------**/
+/***************************************************************************************/
+
+/** [ Importar Archivo Secciones Comunes ] **/
+@import "_common.sass"
+
+//Contenedor Layout 
+.pageWrapperLayout
+	margin   : 0 auto 
+	max-width: 1100px
+	width    : 100%
+
+//Contenedor Contenido de Páginas
+.pageContentLayout
+	padding: 66px 0
+
+/***************************************************************************************/
+/**--  HEADER   ----------------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_header.sass"
+
+/***************************************************************************************/
+/**-- CAROUSELES   -------------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_carouseles.sass"
+
+
+
+/***************************************************************************************/
+/**-- PÁGINA INICIO  -----------------------------------------------------------------**/
+/***************************************************************************************/
+
+//SECCCIÓN MISCELANEO
+.pageInicioMiscelaneo
+	background         : url('../../images/backgrounds/beautiful-woman2.jpg') no-repeat
+	background-position: 90% 60%
+	min-height         : 518px
+	padding            : 36px 0 20px
+
+	//Título
+	h2.title 
+		color      : #fff
+		font-family: "SerifBetaRegular", sans-serif
+		font-size  : 40px
+		font-weight: 600
+		margin     : 30px 0 45px
+
+//SECCIÓN TESTIMONIO
+.itemTestimonio
+	color      : white
+	font-family: "SerifBeta",sans-serif
+	//Texto
+	.content-text
+		border     : 1px solid #c4a648
+		box-sizing : border-box
+		height     : 180px
+		margin     : 40px 0 20px
+		padding    : 10px 130px
+	//Imagen
+	.content-image
+		justify-content: center 
+		figure 
+			+border-radius(50%)
+			height  : 52px 
+			height  : 52px 
+			margin  : 0 15px 
+			overflow: hidden 
+
+//
+#container-testimony
+	//bullet
+	.swiper-pagination-bullet
+		background: silver
+
+//Sobrescribir paginacion estilos
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+	bottom  : 0 !important
+	position: relative 
+
+
+
+
+
+/***************************************************************************************/
+/**-- SECCION RELACIONADA A SERVICIOS ------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_services.sass"
+
+/***************************************************************************************/
+/**-- SECCION RELACIONADA Página Nosotros --------------------------------------------**/
+/***************************************************************************************/
+
+@import "_nosotros.sass"
+
+/***************************************************************************************/
+/**-- SECCION STAFF ------------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_staff.sass"
+
+
+/***************************************************************************************/
+/**-- SECCION BLOG ------------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_blog.sass"
+
+
+/***************************************************************************************/
+/**-- SECCION IMAGES -----------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_multimedia.sass"
+
+/***************************************************************************************/
+/**-- SECCION PROMOCIONES  -----------------------------------------------------------**/
+/***************************************************************************************/
+
+//Contenedor 
+.containerPromotions
+	padding : 0 0 36px
+	&:after 
+		background: #D0A63E
+		bottom    : 0
+		content   : ""
+		display   : block
+		height    : 1px 
+		margin    : 30px 0 0 0
+		position  : absolute
+		width     : 332px
+
+//Item de Promoción
+.itemPromotion
+	margin: 0 38px 30px 0
+	width : calc( (100%/3) - ( (2*38px) / 3 ) )
+	//tercer elemento
+	&:nth-child(3)
+		margin-right: 0
+	//ultimo elemento
+	&:last-child 
+		clear: both
+
+
+/***************************************************************************************/
+/**-- SECCION CONTACTO  ---------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_contacto.sass"
+
+/***************************************************************************************/
+/**--  MAIN FOOTER  ------------------------------------------------------------------**/
+/***************************************************************************************/
+
+@import "_footer.sass"
+
+
+/************************************************************************************/
+/*-- MEDIA QUERIES -----------------------------------------------------------------*/
+/************************************************************************************/
+
+
+@import "_media_queries.sass"
+

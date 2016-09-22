@@ -1,0 +1,102 @@
+/*----------------------------------------------------------------------------------*/
+/*-------------------  ARCHIVO MULTIMEDIA DE PÁGINA --------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+//---------------------------*
+// BOTONES ISOTOPE
+//---------------------------*
+
+.containerIsotopeButtons
+	margin : 40px auto
+	//buttons
+	button 
+		+transition( all 700ms ease-in )
+		background : white
+		border     : none 
+		border-left: 1px solid #B7B7B7
+		color      : #B7B7B7
+		line-height: 1em
+		outline    : 0px !important
+		padding    : 10px 22px 
+		//primer elemento
+		&:first-child 
+			border: none
+		//active and hover
+		&:hover , &.active 
+			background: #D0A63E
+			color     : white
+
+
+/**[ Contenedor ]**/
+#isotope-images
+	justify-content: space-around
+	min-height     : 500px
+
+/**[ Imágenes Preview ]**/
+.itemImagePreview
+	margin    : 0 15px 20px
+	max-height: 234px 
+	overflow  : hidden
+	width     : calc( (100%/3) - (2*15px) )
+	//Imagen
+	img 
+		+filter( grayscale(100%) )
+		+transition( all 600ms ease-in )
+
+	//Contenedor Texto
+	.container-text
+		+opacity( 0 )
+		+transition( all 600ms ease-in )
+		bottom  : 0
+		left    : 0
+		padding : 55px 22px
+		position: absolute
+		right   : 0
+		top     : 0
+		z-index : 9
+		h2
+			color      : #D0A63E
+			font-family: "Casloncp",sans-serif
+			font-size  : 24px
+			margin     : 0 auto 20px
+		p 
+			color      : white 
+			font-family: "SerifBeta",sans-serif
+	
+	//Fancybox
+	.gallery-fancybox
+		position: relative
+		z-index : 999999
+
+	//Hover
+	&:hover 
+		img
+			+filter( grayscale(0%) )
+		.container-text
+			+opacity( .8 )
+
+/**[ Container de Video ]**/
+.container-videos
+	width : 100%
+
+//---------------------------*
+// VIDEOS ITEMS
+//---------------------------*
+
+.itemVideoPreview
+	margin: 0 30px 30px 0
+	width : calc( (100%/3) - ( (2*30px) / 3 ) )
+	//tercer elemento
+	&:nth-child( 3 )
+		margin-right : 0
+	//frame
+	iframe 
+		height: 235px 
+		width : 100%
+	
+.itemVideoPreview--featured
+	margin : 45px 0
+	iframe 
+		height: 551px
+		width : 100%
+

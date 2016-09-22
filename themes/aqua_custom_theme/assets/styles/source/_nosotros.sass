@@ -1,0 +1,71 @@
+
+/***************************************************************************************/
+/**-- SECCION RELACIONADA A PAGINA NOSOTROS  -----------------------------------------**/
+/***************************************************************************************/
+
+.sectionCommonNosotros
+	padding : 40px 0 60px 0
+	.content-text
+		font-family: "SerifBeta",sans-serif
+		font-size  : 16px
+		font-style : italic
+		padding    : 60px 0 0 0
+		//titulo
+		h2.title
+			border-bottom: 1px solid  black
+			color        : black 
+			font-family  : "Casloncp", sans-serif
+			font-size    : 35px
+			font-style   : normal
+			font-weight  : 600
+			line-height  : 1
+			margin       : 0 auto 20px 
+			padding      : 0 0 10px 
+			span 
+				color : #D0A63E
+		//Lista
+		ul 
+			color          : black 
+			list-style-type: none 
+			padding        : 0
+			li 
+				&:before 
+					+border-radius( 50% )
+					background    : #D0A73F
+					content       : ""
+					display       : inline-block
+					height        : 6px
+					vertical-align: middle
+					width         : 6px 
+					margin        : 0 12px 0 0
+
+/**[ Imágen Nosotros - Página ]**/
+#image-featured-nosotros
+	box-sizing: border-box
+	left      : -17%
+	margin    : 0
+	position  : absolute
+	top       : 0
+	//after
+	&:after
+		background: #C4A648
+		content   : ""
+		display   : block
+		height    : 1px
+		margin    : 40px auto 0
+		width     : 70%
+
+/**[ Imágen Nosotros Sección Home ]**/
+.image-about-our
+	box-sizing: border-box
+	margin    : 0
+	max-width : 535px
+	padding   : 30px 0
+	position  : absolute
+	right     : -17%
+	top       : 0
+	width     : 100%
+
+/**[ Espacio por posición absoluta ]**/
+#spacing-section-nosotros 
+	padding : 50px 0

@@ -1,0 +1,79 @@
+/*----------------------------------------------------------------------------------*/
+/*--------------------- ARCHIVO HEADER  DE PÁGINA ----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+//---------------------------*
+// BARRA TOP 
+//---------------------------*
+
+#topBarHeader
+	background   : rgba(109,104,110,1)
+	border-bottom: 1px solid #777
+	color        : white
+	font-size    : 11px
+	overflow     : hidden
+
+/** Reserva Telefono **/
+#contact-phone
+	background: #8d8580
+	padding   : 9px 16px
+
+//---------------------------*
+// HEADER MAIN
+//---------------------------*
+
+#mainHeader
+	background: #7D767C
+
+
+//MainLogo
+#mainLogo
+	margin : 0
+	padding: 24px 0
+	+transition( all 500ms ease )
+	+scale( 0.95 )
+	//hover 
+	&:hover 
+		+opacity( .8 )
+		+scale( 1 )
+
+//---------------------------*
+// MAIN NAVIGATION
+//---------------------------*
+
+/*Navigation*/
+nav.mainNavigation
+	font-family: 'Montserrat', sans-serif
+	font-size  : 14px
+
+	//Ul
+	ul 
+		list-style-type: none 
+		margin         : 0
+		padding        : 0
+
+		li 
+			border-top: 5px solid rgba(160,217,188,0)
+			display   : inline-block
+			padding   : 25px 10px
+			position  : relative
+			+transition( all 600ms ease )
+			a 
+				+border-radius( 5px )
+				+transition( all 600ms ease )
+				color          : white
+				display        : block
+				line-height    : 1em 
+				padding        : 9px 13px
+				position       : relative
+				text-align     : center
+				text-decoration: none 
+				z-index        : 999999
+
+			//Hover li 
+			&:hover 
+				border-top: 5px solid white
+				a 
+					background: #15B4AA
+
