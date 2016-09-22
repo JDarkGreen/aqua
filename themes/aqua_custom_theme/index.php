@@ -27,6 +27,18 @@
 	?>
 </div> <!-- /.pageWrapperLayout -->
 
+<?php  
+	/*
+	 * Importar partial de contacto
+	 */
+	include( locate_template('partials/section-contact-banner.php') );
+
+	/*
+	 * Importar partial de contacto
+	 */
+	include( locate_template('partials/products/carousel-products.php') );
+?>
+
 
 <!-- Footer -->
 <?php get_footer(); ?>
