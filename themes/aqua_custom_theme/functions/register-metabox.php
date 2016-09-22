@@ -30,6 +30,13 @@ include("metabox/services/mb_service_care.php");
 include("metabox/services/mb_service_lisos.php");
 include("metabox/services/mb_service_makeup.php");*/
 
+/******************************************************************/
+/**- PRODUCTOS **/
+/******************************************************************/
+
+/*Metabox de Precio*/
+include('metabox/products/mb_price_product.php' );
+
 
 
 

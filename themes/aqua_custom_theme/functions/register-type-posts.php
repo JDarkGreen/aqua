@@ -55,55 +55,31 @@ function create_post_type(){
 		'menu_icon'   => 'dashicons-chart-pie',
 	);
 
-	/*|-----STAFF ----------------------|*/
+	/*|-----PRODUCTOS ----------------------|*/
 	
-	$labels_staff = array(
-		'name'               => __('Staff'),
-		'singular_name'      => __('Staff'),
-		'add_new'            => __('Nuevo Integrante'),
-		'add_new_item'       => __('Agregar nuevo Integrante'),
-		'edit_item'          => __('Editar Integrante'),
-		'view_item'          => __('Ver Integrante'),
-		'search_items'       => __('Buscar Integrantes'),
-		'not_found'          => __('Integrante no encontrado'),
-		'not_found_in_trash' => __('Integrante no encontrado en la papelera'),
+	$labels_products = array(
+		'name'               => __('Productos'),
+		'singular_name'      => __('Productos'),
+		'add_new'            => __('Nuevo Producto'),
+		'add_new_item'       => __('Agregar nuevo Producto'),
+		'edit_item'          => __('Editar Producto'),
+		'view_item'          => __('Ver Producto'),
+		'search_items'       => __('Buscar Productos'),
+		'not_found'          => __('Producto no encontrado'),
+		'not_found_in_trash' => __('Producto no encontrado en la papelera'),
 	);
 
-	$args_staff = array(
-		'labels'      => $labels_staff,
+	$args_products = array(
+		'labels'      => $labels_products,
 		'has_archive' => true,
 		'public'      => true,
 		'hierachical' => false,
 		'supports'    => array('title','editor','excerpt','custom-fields','thumbnail','page-attributes' ),
 		'show_ui' => true,
 		'taxonomies'  => array( 'post_tag' ),
-		'menu_icon'   => 'dashicons-id',
+		'menu_icon'   => 'dashicons-cart',
 	);
 
-	/*|-----TESTIMONIOS ----------------------|*/
-	
-	$labels_testimony = array(
-		'name'               => __('Testimonios'),
-		'singular_name'      => __('Testimonio'),
-		'add_new'            => __('Nuevo Testimonio'),
-		'add_new_item'       => __('Agregar nuevo Testimonio'),
-		'edit_item'          => __('Editar Testimonio'),
-		'view_item'          => __('Ver Testimonio'),
-		'search_items'       => __('Buscar Testimonios'),
-		'not_found'          => __('Testimonio no encontrado'),
-		'not_found_in_trash' => __('Testimonio no encontrado en la papelera'),
-	);
-
-	$args_testimony = array(
-		'labels'      => $labels_testimony,
-		'has_archive' => true,
-		'public'      => true,
-		'hierachical' => false,
-		'supports'    => array('title','editor','excerpt','custom-fields','thumbnail','page-attributes' ),
-		'show_ui' => true,
-		'taxonomies'  => array( 'post_tag' ),
-		'menu_icon'   => 'dashicons-businessman',
-	);
 
 	/*|-----IMAGENES ----------------------|*/
 	
@@ -189,11 +165,8 @@ function create_post_type(){
 	#SERVICIOS
 	register_post_type( 'theme-services' , $args_services );
 
-	#STAFF
-	register_post_type( 'theme-staff' , $args_staff );
-
-	#TESTIMONIO
-	register_post_type( 'theme-testimony' , $args_testimony );
+	#PRODUCTOS
+	register_post_type( 'theme-products' , $args_products );
 
 	#IMÁGENES
 	register_post_type( 'theme-images' , $args_images );
