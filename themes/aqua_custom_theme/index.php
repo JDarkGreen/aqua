@@ -37,7 +37,14 @@
 	 * Importar partial de contacto
 	 */
 	include( locate_template('partials/products/carousel-products.php') );
+
+	/*
+	 * Importar partial de miscelaneo
+	 */
+	include( locate_template('partials/home/section-miscelaneo.php') );
 ?>
+
+
 
 
 <!-- Footer -->

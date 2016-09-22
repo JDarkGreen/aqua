@@ -21,9 +21,11 @@ $options = get_option("theme_settings");
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-	
-	<div class="fb-page" data-href="<?= LINK_FACEBOOK ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= LINK_FACEBOOK ?>" class="fb-xfbml-parse-ignore"><a href="<?= LINK_FACEBOOK ?>">Central Glam</a></blockquote></div>
+	<?php if( exist_facebook()['exists'] ) : ?>
 
+	<div class="fb-page" data-href="<?= exist_facebook()['link'] ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="467" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= exist_facebook()['link'] ?>" class="fb-xfbml-parse-ignore"><a href="<?= exist_facebook()['link'] ?>"> Aqua Spa </a></blockquote></div>
+	
+	<?php endif; ?>
 
 
 </section> <!-- /. -->

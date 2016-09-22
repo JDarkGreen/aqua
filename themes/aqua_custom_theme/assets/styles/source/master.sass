@@ -130,52 +130,34 @@ body,html
 
 //SECCCIÓN MISCELANEO
 .pageInicioMiscelaneo
-	background         : url('../../images/backgrounds/beautiful-woman2.jpg') no-repeat
-	background-position: 90% 60%
-	min-height         : 518px
-	padding            : 36px 0 20px
+
+	background     : url('../../images/backgrounds/spa_home_fondo_belleza_peru.jpg') no-repeat
+	background-size: cover
+	min-height     : 518px
+	padding        : 36px 0
 
 	//Título
 	h2.title 
-		color      : #fff
-		font-family: "SerifBetaRegular", sans-serif
-		font-size  : 40px
+		color      : #484847
+		font-family: "Montserrat",sans-serif
+		font-size  : 28px
 		font-weight: 600
-		margin     : 30px 0 45px
+		margin     : 0 auto 25px
+		position   : relative
+		span
+			background: white
+			padding   : 0 10px 0 0
+			position  : relative
+			z-index   : 99
+		&:after 
+			border-bottom: 1px dotted black 
+			bottom       : 6px 
+			content      : ""
+			left         : 0
+			position     : absolute
+			right        : 0
 
-//SECCIÓN TESTIMONIO
-.itemTestimonio
-	color      : white
-	font-family: "SerifBeta",sans-serif
-	//Texto
-	.content-text
-		border     : 1px solid #c4a648
-		box-sizing : border-box
-		height     : 180px
-		margin     : 40px 0 20px
-		padding    : 10px 130px
-	//Imagen
-	.content-image
-		justify-content: center 
-		figure 
-			+border-radius(50%)
-			height  : 52px 
-			height  : 52px 
-			margin  : 0 15px 
-			overflow: hidden 
-
-//
-#container-testimony
-	//bullet
-	.swiper-pagination-bullet
-		background: silver
-
-//Sobrescribir paginacion estilos
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
-	bottom  : 0 !important
-	position: relative 
-
-
+	
 
 
 
