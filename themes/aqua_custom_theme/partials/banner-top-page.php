@@ -1,18 +1,41 @@
+<?php  
+/**
+  * Archivo que incluye el banner top de la página
+  * 
+  */
 
-<!-- Si existe el post u objecto -->
-<?php if( isset($banner) || isset($banner_object) ) : ?>
+/**
+  * Variables
+  */
+
+//El banner
+$the_banner = get_queried_object();
+
+//El título
+$the_title = isset($banner_title) && !empty($banner_title) ? $banner_title : $the_banner->post_title;
+
+
+/**
+  * Renderizando el banner
+  */
 	
-	<!-- BANNER DE LA PAGINA -->
+	if( has_banner_page( get_queried_object_id() ) ) :
+?>
+
+	<!-- Banner top de Página -->
 	<section class="pageCommon__banner">
 
-		<div class="pageWrapperLayout">
-
-			<!-- Título -->
-			<?php $title = isset($banner_title) && !empty($banner_title) ? $banner_title : $banner->post_title; ?>
-			<h2 class="title-page text-uppercase"> <?= __( $title , 'LANG' ); ?> </h2>
-	
-		</div> <!-- /.pageWrapperLayout -->
+		<!-- Imagen -->
+		<img src="" alt="" class="img-fluid d-block m-x-auto" />
+		
+		<!-- Título -->
+		<h2 class="title-page text-uppercase"> 
+			<?= __( $title , 'LANG' ); ?> 
+		</h2>
 
 	</section> <!-- /.pageCommon__banner -->
 
 <?php endif; ?>
+
+
+

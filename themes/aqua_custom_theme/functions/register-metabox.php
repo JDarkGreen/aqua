@@ -7,8 +7,11 @@ global $post;
 /**- COMUNES **/
 /******************************************************************/
 
+/**[ INCLUIR METABOX DE BANNER DE PÁGINA ]**/
+include("metabox/common/mb_custom_banner.php");
+
 /**[ INCLUIR METABOX DE GALERÍA ]**/
-#include("metabox/common/mb_custom_gallery.php");
+include("metabox/common/mb_custom_gallery.php");
 
 
 /******************************************************************/

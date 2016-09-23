@@ -5,8 +5,6 @@ var j = jQuery.noConflict();
 **/
 
 
-
-
 (function($){
 
 	/**

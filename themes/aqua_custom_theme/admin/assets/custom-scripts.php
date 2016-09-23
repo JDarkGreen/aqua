@@ -29,6 +29,14 @@ function load_admin_custom_enqueue() {
 	wp_enqueue_style( 'wp-css-custom-theme-admin', THEMEROOT . "/admin/assets/css/custom-theme-admin.css" );
 	wp_enqueue_script('wp-js-custom-theme-admin', THEMEROOT . '/admin/assets/js/custom-theme-admin.js', array('jquery' ), '', true);
 
+
+	/**
+	* JS DE SUBIR GALERIA DE IMAGENES 
+	**/
+	wp_enqueue_script('wp-js-upload-gallery', THEMEROOT . '/admin/assets/js/upload-container-gallery.js', array('jquery' ), '', true);
+	//Imágen Simple
+	wp_enqueue_script('wp-js-upload-single-image', THEMEROOT . '/admin/assets/js/upload-single-image.js', array('jquery' ), '', true);
+
 }
 
 add_action('admin_enqueue_scripts', 'load_admin_custom_enqueue');
