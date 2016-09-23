@@ -23,7 +23,7 @@ $options = get_option("theme_settings");
 
 	<?php if( exist_facebook()['exists'] ) : ?>
 
-	<div class="fb-page" data-href="<?= exist_facebook()['link'] ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="467" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= exist_facebook()['link'] ?>" class="fb-xfbml-parse-ignore"><a href="<?= exist_facebook()['link'] ?>"> Aqua Spa </a></blockquote></div>
+	<div class="fb-page" data-href="<?= exist_facebook()['link'] ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="515" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= exist_facebook()['link'] ?>" class="fb-xfbml-parse-ignore"><a href="<?= exist_facebook()['link'] ?>"> Aqua Spa </a></blockquote></div>
 	
 	<?php endif; ?>
 
