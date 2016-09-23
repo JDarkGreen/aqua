@@ -63,10 +63,11 @@
 						<?php  
 							//Página contacto
 							$page_contact = get_page_by_title('contactenos');
+							$page_contact_link = !empty($page_contact) ? get_permalink($page_contact->ID) : '#'; 
 						?>
 						
 						<!-- Botón de Reserva -->
-						<a href="<?= get_permalink($page_contact->ID); ?>" class="button_contact text-uppercase">
+						<a href="<?= $page_contact_link; ?>" class="button_contact text-uppercase">
 							<?php _e( 'Contáctanos' , LANG ); ?>
 						</a>
 

@@ -58,6 +58,7 @@ require('admin/assets/custom-scripts.php');
 include('admin/theme-customizer-modal.php');
 
 
+
 /*******************************************************************/
 /* 	Archivos de Condiguración en el Tema  */
 /*******************************************************************/

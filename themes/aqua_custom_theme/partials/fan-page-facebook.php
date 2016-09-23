@@ -21,9 +21,9 @@ $options = get_option("theme_settings");
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-	<?php if( exist_facebook()['exists'] ) : ?>
+	<?php if( has_facebook() ) : ?>
 
-	<div class="fb-page" data-href="<?= exist_facebook()['link'] ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="515" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= exist_facebook()['link'] ?>" class="fb-xfbml-parse-ignore"><a href="<?= exist_facebook()['link'] ?>"> Aqua Spa </a></blockquote></div>
+	<div class="fb-page" data-href="<?= get_facebook() ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="515" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= get_facebook() ?>" class="fb-xfbml-parse-ignore"><a href="<?= get_facebook() ?>"> Aqua Spa </a></blockquote></div>
 	
 	<?php endif; ?>
 

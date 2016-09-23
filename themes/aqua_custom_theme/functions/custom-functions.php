@@ -33,61 +33,62 @@ function exist_map()
 /**
 * Definir si existe facebook
 **/
-
-function exist_facebook()
+function has_facebook()
 {
 	global $options;
 
-	if( isset($options['theme_social_fb_text']) && !empty($options['theme_social_fb_text']) ) :
+	if( isset($options['theme_social_fb_text']) && !empty( $options['theme_social_fb_text']) )
 
-	$array = array(
-		'exists' => true,
-		'link'   => $options['theme_social_fb_text'],
-	);
-
-	return $array;
-	
-	else: return false; endif;
+	{ return true; } else { return false; } 
 }
+
+function get_facebook()
+{
+	global $options;
+
+	if( has_facebook() ){ return $options['theme_social_fb_text']; }
+	else{ return '#'; }
+}
+
 
 /**
 * Definir si existe twitter
 **/
-
-function exist_twitter()
+function has_twitter()
 {
 	global $options;
 
-	if( isset($options['theme_social_twitter_text']) && !empty($options['theme_social_twitter_text']) ) :
-
-	$array = array(
-		'exists' => true,
-		'link'   => $options['theme_social_twitter_text'],
-	);
-
-	return $array;
-	
-	else: return false; endif;
+	if( isset($options['theme_social_twitter_text']) && !empty( $options['theme_social_twitter_text']) )
+		
+	{ return true; } else { return false; } 
 }
+
+function get_twitter()
+{
+	global $options;
+
+	if( has_twitter() ){ return $options['theme_social_twitter_text']; }
+	else{ return '#'; }
+}
+
 
 /**
 * Definir si existe youtube
 **/
-
-function exist_youtube()
+function has_youtube()
 {
 	global $options;
 
-	if( isset($options['theme_social_youtube_text']) && !empty($options['theme_social_youtube_text']) ) :
+	if( isset($options['theme_social_youtube_text']) && !empty( $options['theme_social_youtube_text']) )
+		
+	{ return true; } else { return false; } 
+}
 
-	$array = array(
-		'exists' => true,
-		'link'   => $options['theme_social_youtube_text'],
-	);
+function get_youtube()
+{
+	global $options;
 
-	return $array;
-	
-	else: return false; endif;
+	if( has_youtube() ){ return $options['theme_social_youtube_text']; }
 }
 
 
@@ -95,22 +96,84 @@ function exist_youtube()
 * Definir si existe linkedin
 **/
 
-function exist_linkedin()
+function has_linkedin()
 {
 	global $options;
 
-	if( isset($options['theme_social_linkedin_text']) && !empty($options['theme_social_linkedin_text']) ) :
-
-	$array = array(
-		'exists' => true,
-		'link'   => $options['theme_social_linkedin_text'],
-	);
-
-	return $array;
-	
-	else: return false; endif;
+	if( isset($options['theme_social_linkedin_text']) && !empty( $options['theme_social_linkedin_text']) )
+		
+	{ return true; } else { return false; } 
 }
 
+function get_linkedin()
+{
+	global $options;
+
+	if( has_linkedin() ){ return $options['theme_social_linkedin_text']; }
+}
+
+
+/**
+* Definir si existe Google Plus
+**/
+
+function has_gplus()
+{
+	global $options;
+
+	if( isset($options['theme_social_gplus_text']) && !empty( $options['theme_social_gplus_text']) )
+		
+	{ return true; } else { return false; } 
+}
+
+function get_gplus()
+{
+	global $options;
+
+	if( has_gplus() ){ return $options['theme_social_gplus_text']; }
+}
+
+
+/**
+* Definir si existe Pinterest
+**/
+
+function has_pinterest()
+{
+	global $options;
+
+	if( isset($options['theme_social_pinterest_text']) && !empty( $options['theme_social_pinterest_text']) )
+		
+	{ return true; } else { return false; } 
+}
+
+function get_pinterest()
+{
+	global $options;
+
+	if( has_pinterest() ){ return $options['theme_social_pinterest_text']; }
+}
+
+
+/**
+* Definir si existe Instagram
+**/
+
+function has_instagram()
+{
+	global $options;
+
+	if( isset($options['theme_social_instagram_text']) && !empty( $options['theme_social_instagram_text']) )
+		
+	{ return true; } else { return false; } 
+}
+
+function get_instagram()
+{
+	global $options;
+
+	if( has_instagram() ){ return $options['theme_social_instagram_text']; }
+}
 
 
 
@@ -127,32 +190,6 @@ function display_social_links()
 
 	<!-- Menu de Redes Sociales Fijos -->
 	<ul id="menu-social-links-fixed" canvas="">
-		
-		<?php if( exist_facebook()['exists'] ) : ?>
-		<li> 
-			<a href="<?= exist_facebook()['link']; ?>" target="_blank" class="fb">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</a> <!-- /link -->
-		</li>
-		<?php endif; ?>	
-		
-			
-		<?php if( exist_twitter()['exists'] ) : ?>
-		<li> 
-			<a href="<?= exist_twitter()['link']; ?>" target="_blank" class="tw">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-			</a> <!-- /link -->
-		</li>
-		<?php endif; ?>	
-
-
-		<?php if( exist_youtube()['exists'] ) : ?>
-		<li> 
-			<a href="<?= exist_youtube()['link']; ?>" target="_blank" class="yt">
-				<i class="fa fa-youtube-play" aria-hidden="true"></i>
-			</a> <!-- /link -->
-		</li>
-		<?php endif; ?>
 
 	</ul> <!-- /.menu-social-links-fixed -->	
 

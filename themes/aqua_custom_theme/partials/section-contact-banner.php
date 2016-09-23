@@ -3,7 +3,9 @@
   * ARCHIVO PARTIAL QUE MUESTRA EL BANNER HACIA EL CONTACTO
 ***/
 
-$page_contacto = get_page_by_title('contactenos');
+$page_contacto      = get_page_by_title('contactenos');
+
+$page_contacto_link = !empty($page_contacto) ? get_permalink( $page_contacto->ID ) : '#';
 
 ?>
 
@@ -14,7 +16,7 @@ $page_contacto = get_page_by_title('contactenos');
 		<!-- Titulo -->
 		<h2 class=""> <?= __("Siente la experiencia en el Spa" , LANG ); ?></h2>
 		<!-- Boton -->
-		<a href="<?= get_permalink( $page_contacto->ID ); ?>" class="btn-show-more btn-show-more--gray text-uppercase"> Contáctanos ahora </a>
+		<a href="<?= $page_contacto_link; ?>" class="btn-show-more btn-show-more--gray text-uppercase"> Contáctanos ahora </a>
 
 	</div> <!-- /.content-text -->
 

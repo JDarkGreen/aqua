@@ -76,4 +76,30 @@ function custom_social_linkedin_render()
 	<?php
 }
 
+
+//google plus
+add_settings_field( 'theme_social_gplus_text', __( 'Link Google Plus', 'LANG' ), 'custom_social_gplus_render', 'customThemePageSocial', PREFIX."_themePage_section_social" );
+//Renderizado 
+function custom_social_gplus_render() 
+{ 
+	$options = get_option( 'theme_settings' ); 
+	?>
+	<input type='text' id="theme_social_gplus_text" class="js-field-ajax input-field" value='<?= !empty($options['theme_social_gplus_text']) ? $options['theme_social_gplus_text'] : "" ; ?>'>
+	<?php
+}
+
+
+//Pinterest
+add_settings_field( 'theme_social_pinterest_text', __( 'Link Pinterest', 'LANG' ), 'custom_social_pinterest_render', 'customThemePageSocial', PREFIX."_themePage_section_social" );
+//Renderizado 
+function custom_social_pinterest_render() 
+{ 
+	$options = get_option( 'theme_settings' ); 
+	?>
+	<input type='text' id="theme_social_pinterest_text" class="js-field-ajax input-field" value='<?= !empty($options['theme_social_pinterest_text']) ? $options['theme_social_pinterest_text'] : "" ; ?>'>
+	<?php
+}
+
+
+
 ?>
