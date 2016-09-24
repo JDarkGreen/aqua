@@ -36,5 +36,7 @@ include( locate_template('partials/banner-top-page.php') );
 	include( locate_template('partials/section-contact-banner.php') );
 ?>
 
+
+
 <!-- Footer -->
 <?php get_footer(); ?>
