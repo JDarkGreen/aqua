@@ -27,7 +27,15 @@ $options = get_option("theme_settings");
 include( locate_template('partials/banner-top-page.php') );
 
 
+/*
+ * Importar Sección Staff
+ */
+
+include( locate_template('partials/nosotros/section-staff.php') );
+
 ?>
+
+
 
 <?php  
 	/*
