@@ -51,13 +51,29 @@
 							<img src="https://unsplash.it/215/255" alt="<?= $last_product->post_name; ?>" class="img-fluid d-block m-x-auto" />
 
 						<?php endif; ?>
+
+						<!-- Calificación de Estrellas -->
+						<div class="qualify-stars">
+							
+							<?php  
+								$mb_stars = get_post_meta( $last_product->ID , 'product_qualify' , true );
+								$mb_stars = !empty($mb_stars) ? intval($mb_stars) : 0;
+
+								for( $i = 0 ; $i < $mb_stars ; $i++ ){
+							?>
+								<!-- Icon -->
+								<i class="fa fa-star" aria-hidden="true"></i>
+					
+							<?php } ?>
+
+						</div> <!-- /.qualify-stars -->
 						
 						<!-- Link to producto -->
-						<div class="content-detail">
+						<!--div class="content-detail">
 							
 							<a href="<?= get_permalink( $last_product->ID ); ?>" class="btn-to-link"> <?= __( 'Detalle' , LANG ); ?></a>
 
-						</div> <!-- /.content-detail -->
+						</div> <! /.content-detail -->
 
 					</figure> <!-- /.featured-image -->
 

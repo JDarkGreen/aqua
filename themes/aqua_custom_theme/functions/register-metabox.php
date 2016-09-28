@@ -39,6 +39,8 @@ include("metabox/services/mb_service_makeup.php");*/
 
 /*Metabox de Precio*/
 include('metabox/products/mb_price_product.php' );
+/*Metabox de Calificación*/
+include('metabox/products/mb_qualify_product.php' );
 
 
 

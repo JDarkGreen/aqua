@@ -15,6 +15,7 @@
 	display    : inline-block 
 	font-family: "Montserrat" , sans-serif
 	margin     : 0 auto 15px
+	overflow   : hidden
 	width      : 100%
 
 	//Imágen
@@ -31,6 +32,15 @@
 				+scale( 1.2 )
 			.content-detail
 				+opacity( 1 )
+
+		//Calificador de Estrellas
+		.qualify-stars
+			bottom  : 14px
+			position: absolute 
+			right   : 14px
+			//Icon
+			i 
+				color: #8FD5BC
 	
 	//Contenedor Detalle
 	.content-detail
@@ -75,3 +85,19 @@
 				font-size      : 12px
 				text-decoration: line-through
 				+opacity( .4 )
+
+
+/**
+  * Contenedor de Página
+  */ 
+.sectionContainerProduct
+	padding : 70px 0
+
+	/* Item preview in this container */
+	.itemProductPreview
+		margin: 0 10px 60px 0
+		width : calc( (100%/4) - ( (3*10px) /4 ) )
+		
+		/* Cuarto elemento o final */
+		&:last-child , &:nth-child(4)
+			margin-right: 0

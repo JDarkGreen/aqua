@@ -399,16 +399,26 @@ ul.menu-social-link
 		margin   : 0 8px 0 0
 	a 
 		+transition( all 500ms ease-in-out )
+		background     : transparent
+		border         : 1px solid transparent
 		color          : black 
 		display        : inline-block
-		font-size      : 13.5px 
-		padding        : 0 4px 
+		font-size      : 16px
+		height         : 38px
+		padding        : 8px 0
 		text-decoration: none 
+		width          : 32px
 		//HOVER AND ACTIVE 
 		&:hover , &.active 
-			background: #D0A63E
-			color     : white 
+			background: #F8F8F8
+			border    : 1px solid #EDEDED 
 
+		//Disabled
+		&.disabled 
+			+opacity( .5 )
+			cursor        : none 
+			pointer-events: none
+			z-index       : -1
 
 /***************************************************************************************/
 /**-- 1.13 MENU DE DATOS -------------------------------------------------------------**/
