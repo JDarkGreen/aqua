@@ -176,6 +176,3 @@ function display_social_links()
 }
 
 endif;
-
-?>
-

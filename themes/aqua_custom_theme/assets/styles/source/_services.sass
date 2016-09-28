@@ -45,6 +45,44 @@
 			height   : 80px
 			margin   : 0 auto 30px
 
+/** CONTENEDOR SECCIÓN DE PÁGINA **/
+.sectionContainerService
+	padding : 100px 0
+
+/* Item Single Service */
+.itemSingleServicePreview
+	border    : 1px solid #F3F3F3
+	box-sizing: border-box
+	margin    : 0 23px 50px 0
+	min-height: 425px
+	padding   : 19px 20px
+	width     : calc( (100%/3) - ( (2*23px) / 3) )
+
+	//Terceros y últimos elementos
+	&:last-child , &:nth-child(3)
+		margin-right : 0
+
+	//Imágen
+	figure.featured-image
+		height  : 168px
+		overflow: hidden
+		img 
+			+transition( all 700ms ease )
+		//:hover
+		&:hover 
+			img 
+				+scale( 1.1 )
+	
+	//Texto
+	.container-text	
+		font-family: "Arial" , sans-serif
+		font-size  : 15px
+		h2 
+			font-family: "Montserrat" , sans-serif
+			color      : #595959
+			font-size  : 22px 
+			font-weight: 600
+	
 
 /** CONTENEDOR SINGLE SERVICIO **/
 .mainContainerService
@@ -52,8 +90,9 @@
 	//Imágen destacada
 	figure.featured-image
 		background-repeat: no-repeat
-		box-shadow       : -60px 0px 60px 0px white inset
+		box-shadow       : -70px 0px 60px 0px white inset
 		height           : 600px
+		margin           : 0 
 		max-width        : 820px
 		width            : 100%
 
@@ -63,8 +102,9 @@
 		font-family: "Montserrat" , sans-serif
 		font-size  : 14px
 		max-width  : 490px
-		padding    : 83px 0 0
+		padding    : 50px 0 0
 		position   : absolute
 		right      : 6%
 		top        : 0
 		width      : 100%
+

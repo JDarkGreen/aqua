@@ -27,42 +27,59 @@ $options = get_option("theme_settings");
 include( locate_template('partials/banner-top-page.php') );
 
 /*
- * Obtener primer servicio
+ * Obtener todos los servicios
  */ 
-	$args        = array('posts_per_page'=>1,'post_type' =>'theme-services','order'=>'ASC','orderby'=>'menu_order','post_status'=>'publish');
+	$args        = array('posts_per_page'=>-1,'post_type' =>'theme-services','order'=>'ASC','orderby'=>'menu_order','post_status'=>'publish');
 	
 	$services    = get_posts( $args );
-	$the_service = $services[0];
 ?>
 
-<main class="mainContainerService containerRelative">
+<!-- Contenedor Sección -->
+<section class="sectionContainerService">
 	
-	<!-- Imágen -->
-	<?php $img_url = wp_get_attachment_url( get_post_thumbnail_id(  $the_service->ID ) );
-	?>
-	<figure class="featured-image" style="background-image : url(<?= $img_url; ?>)"></figure>
+	<!-- Wrapper de Contenido / Contenedor Layout -->
+	<div class="pageWrapperLayout containerFlex">
 
-	<!-- Contenido o Información de Página -->
-	<div class="container-text">
+		<?php foreach( $services as $service ): ?>
 
-		<!-- Título -->
-		<h2 class="titleCommon__section text-xs-center"> <span> <?= $the_service->post_title; ?> </span> </h2>
+			<!-- Articles -->
+			<article class="itemSingleServicePreview containerRelative">
+				
+				<!-- Imagen -->
+				<?php  
+					$feat_img = wp_get_attachment_url( get_post_thumbnail_id( $service->ID ) );
+				?>
+				<figure class="featured-image">
+					<a href="<?= get_permalink( $service->ID ); ?>">
+						<img src="<?= $feat_img; ?>" alt="<?= $service->post_name; ?>" class="img-fluid d-block m-x-auto" />
+					</a> <!-- / -->
+				</figure>
 
-		<!-- Espacio --> <br/>
+				<!-- CONTENEDOR DE TEXTO -->
+				<div class="container-text text-xs-center">
+					
+					<!-- Nombre -->
+					<h2 class="text-capitalize"><?= $service->post_title; ?></h2>
 
-		<!-- Información -->
-		<?= apply_filters( 'the_content' , $the_service->post_content ); ?>
+					<!-- Extracto -->
+					<p class="excerpt"> <?= $service->post_excerpt; ?> </p>
+					
+					<!-- Botón -->
+					<a href="<?= get_permalink( $service->ID ); ?>" class="btn-show-more text-uppercase"><?= __('leer más' , LANG ); ?></a>
+					
+				</div> <!-- /.container-text -->
 
-		<!-- Espacio --> <br/>
+			</article> <!-- /.itemServicePreview -->
 
-		<!-- Boton ver servicios -->
-		<div class="text-xs-center">
-			<a href="#" class="btn-show-more text-uppercase"> ver servicios </a>
-		</div> <!-- /. -->
+		<?php endforeach; ?>
 
-	</div> <!-- /.container-text -->
+	</div> <!-- /.pageWrapperLayout containerRelative -->
 
-</main> <!-- /.mainContainerService -->
+</section> <!-- /.mainContainerService -->
+
+
+<!-- Linea Separadora -->
+<div id="separator-line"></div>
 
 <?php  
 	/*

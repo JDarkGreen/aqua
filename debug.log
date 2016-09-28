@@ -1,1 +1,1 @@
-[27-Sep-2016 22:53:26 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-services.php on line 54
+[28-Sep-2016 16:13:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/chullito/public_html/aqua/wp-content/themes/aqua_custom_theme/functions/custom-functions/functions-banner-page.php:40) in /home/chullito/public_html/aqua/wp-includes/pluggable.php on line 1174

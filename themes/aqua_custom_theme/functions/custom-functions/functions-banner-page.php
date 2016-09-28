@@ -33,7 +33,3 @@ function get_banner_page( $page_id )
 		return 'https://unsplash.it/1920/314';
 	endif;
 }
-
-
-?>
-

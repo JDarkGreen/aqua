@@ -9,13 +9,13 @@
   */
 
 //El banner
-$the_banner = get_queried_object();
+$the_banner = isset($banner) && !empty($banner) ? $banner : get_queried_object();
 
 //El título
 $the_title = isset($banner_title) && !empty($banner_title) ? $banner_title : $the_banner->post_title;
 
 //El id de banner
-$id_banner = get_queried_object_id();
+$id_banner = isset($banner) && !empty($banner) ? $banner->ID : get_queried_object_id();
 
 
 /**
