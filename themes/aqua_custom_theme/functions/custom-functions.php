@@ -42,6 +42,15 @@ include( 'custom-functions/functions-social-links.php' );
 include( 'custom-functions/functions-banner-page.php' );
 
 
+/**
+* ---------------------------------------------------------------
+* -- CONSEGUIR GALERIA DEL POST SI EXISTE METABOX DE GALERIA
+* ---------------------------------------------------------------
+**/
+
+include( 'custom-functions/functions-gallery-post.php' );
+
+
 
 
 ?>

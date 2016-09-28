@@ -2,101 +2,65 @@
 /*-------------------  ARCHIVO MULTIMEDIA DE PÁGINA --------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
-//---------------------------*
-// BOTONES ISOTOPE
-//---------------------------*
+//CONTENEDOR MULTIMEDIA
+.sectionContainerMultimedia
+	padding : 100px 0
 
-.containerIsotopeButtons
-	margin : 40px auto
-	//buttons
-	button 
-		+transition( all 700ms ease-in )
-		background : white
-		border     : none 
-		border-left: 1px solid #B7B7B7
-		color      : #B7B7B7
-		line-height: 1em
-		outline    : 0px !important
-		padding    : 10px 22px 
-		//primer elemento
-		&:first-child 
-			border: none
-		//active and hover
-		&:hover , &.active 
-			background: #D0A63E
-			color     : white
-
-
-/**[ Contenedor ]**/
-#isotope-images
-	justify-content: space-around
-	min-height     : 500px
+	//Con Imagen destacada
+	&.bgFeaturedImage
+		background-position: right bottom
+		background-repeat  : no-repeat
+		background-size    : 110%
+		padding-bottom     : 341px
 
 /**[ Imágenes Preview ]**/
-.itemImagePreview
-	margin    : 0 15px 20px
-	max-height: 234px 
-	overflow  : hidden
-	width     : calc( (100%/3) - (2*15px) )
-	//Imagen
-	img 
-		+filter( grayscale(100%) )
-		+transition( all 600ms ease-in )
+.itemPreviewImage
+	overflow: hidden 
+	width   : calc( 100%/3)
+	+transition( all 500ms ease )
 
-	//Contenedor Texto
-	.container-text
-		+opacity( 0 )
-		+transition( all 600ms ease-in )
-		bottom  : 0
-		left    : 0
-		padding : 55px 22px
-		position: absolute
-		right   : 0
-		top     : 0
-		z-index : 9
-		h2
-			color      : #D0A63E
-			font-family: "Casloncp",sans-serif
-			font-size  : 24px
-			margin     : 0 auto 20px
-		p 
-			color      : white 
-			font-family: "SerifBeta",sans-serif
-	
-	//Fancybox
-	.gallery-fancybox
-		position: relative
-		z-index : 999999
+	//featured image
+	figure.featured-image
+		background-size: cover 
+		height         : 331px
+		margin         : 0
+		width          : 100% 
+	//Icon hover
+	.icon-zoom
+		bottom         : 0
+		justify-content: center
+		left           : 0
+		position       : absolute 
+		right          : 0
+		top            : 110%
+		+transition( all 300ms cubic-bezier(.5,.5,.5,1) )
+		//Icon
+		i 
+			+border-radius(50%)
+			background: #15B4AA
+			color     : white
+			height    : 52px		
+			padding   : 18px 
+			width     : 52px
 
-	//Hover
+	//Hovered image
 	&:hover 
-		img
-			+filter( grayscale(0%) )
-		.container-text
-			+opacity( .8 )
-
-/**[ Container de Video ]**/
-.container-videos
-	width : 100%
+		+opacity( .7 )
+		//Icon zoom
+		.icon-zoom
+			top : 0%
 
 //---------------------------*
 // VIDEOS ITEMS
 //---------------------------*
 
 .itemVideoPreview
-	margin: 0 30px 30px 0
-	width : calc( (100%/3) - ( (2*30px) / 3 ) )
+	margin: 0 42px 30px 0
+	width : calc( (100%/3) - ( (2*42px) / 3 ) )
 	//tercer elemento
-	&:nth-child( 3 )
+	&:nth-child( 3 ) , &:last-child
 		margin-right : 0
 	//frame
 	iframe 
-		height: 235px 
+		height: 178px
 		width : 100%
-	
-.itemVideoPreview--featured
-	margin : 45px 0
-	iframe 
-		height: 551px
-		width : 100%
-

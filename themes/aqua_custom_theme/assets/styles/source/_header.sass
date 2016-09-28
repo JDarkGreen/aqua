@@ -74,6 +74,33 @@ nav.mainNavigation
 			//Hover li 
 			&:hover , &.current-menu-item , &.current_page_item 
 				border-top: 5px solid white
+
+				//Hovered submenu
+				ul.sub-menu
+					+opacity( 1 )
+					top       : 105%
+					visibility: visible 
+					z-index   : 99
+				//Link
 				a 
 					background: #15B4AA
+
+		//Submenu
+		&.sub-menu 
+			+opacity( 0 )
+			+transition( all 700ms ease )
+			background: rgba(0,0,0,.5)
+			position  : absolute 
+			top       : 115%
+			visibility: hidden
+			z-index   : -1
+			li 
+				border : none
+				padding: 10px
+				a 
+					background: transparent
+				//hover 
+				&:hover , &.current-menu-item , &.current_page_item 
+					a 
+						background: #15B4AA
 
