@@ -3,10 +3,50 @@
 /**-- SECCION RELACIONADA A PAGINA CONTACTO  -----------------------------------------**/
 /***************************************************************************************/
 
+/** 
+  * Contenedor de Sección
+  */
+.sectionContainerContact
+	padding : 100px 0
+
+
+/**
+  * Titulos Contacto
+  */
+.title-contact
+	font-size : 40px
+
+h4.subtitle-contact
+	color      : #FFA590
+	font-family: "Mr De Haviland", cursive
+	font-size  : 40px
+
+
+/**
+  * Item de Contacto
+  */
+.itemContact
+	font-size : 14px
+	//Título
+	h2 
+		color      : rgba(0,0,0,.8)
+		font-size  : 16px 
+		font-weight: 600
+		margin     : 0 auto 23px
+
+	//Clase Featured
+	.featured
+		color : #00CBBD
+
+
+
 
 //Mapa
 #canvas-map
-	height: 365px
+	+box-shadow( 0px 0px 15px 3px rgba(0,0,0,.2) )
+	border: 6px solid white 
+	height: 290px
+	margin: 45px 0 
 	width : 100%
 
 /**[ Menú de Contacto ]**/
@@ -47,35 +87,6 @@ ul.menuContacto
 		span 
 			color : #D0A63E
 
-
-/**[ Menu de Redes Sociales ]**/
-ul#socialLinksMenuContacto
-	display        : inline-block
-	list-style-type: none 
-	margin         : 0
-	padding        : 0 
-	li 
-		display: inline-block
-		margin : 0 0 10px 10px
-		a 
-			display        : block 
-			text-decoration: none !important
-			//Iconos
-			i 
-				+border-radius( 50% )
-				+transition( all 600ms ease-in-out )
-				align-items    : center
-				background     : #F8F8FA
-				color          : #D0A63E
-				display        : flex 
-				height         : 31px 
-				justify-content: center
-				width          : 31px 
-			
-			&:hover 
-				i 
-					+scale( 1.2 )
-
 /**[ Sección de Formulario ]**/
 .pageContacto__formulary
 	background: #F0F0F0
@@ -83,35 +94,35 @@ ul#socialLinksMenuContacto
 
 //Formulario
 #form-contacto
-	font-family: "SerifBeta", sans-serif
+	font-family: 'Merriweather', serif
 	margin     : 0 auto
-	max-width  : 676px
+	max-width  : 780px
 	width      : 100%
+
+	//Título
+	h2.title-formulary
+		font-family: "Arial" , sans-serif
+		margin     : 0 auto 30px
 
 //Inputs y textareas
 .pageContacto__form__group
-	margin : 0 auto 14px
-	input , textarea 
-		+border-radius( 2px )
+	border-bottom: 1px solid rgba(0,0,0,.1)
+	font-style   : italic 
+	//Grupo especial
+	&.special-group 
+		width : 50%
+
+	input , textarea
 		border     : none 
-		color      : #C3C3C3
+		color      : #5E5E5E
+		font-size  : 18px
 		line-height: 1em 
-		padding    : 11px
+		outline    : 0px !important
+		padding    : 20px 16px 11px
 		width      : 100%
 	//only textarea 
 	textarea 
 		height    : 88px
 		max-height: 88px
 
-//Botón enviar formulario
-button#send-form
-	background : black 
-	border     : none 
-	color      : white
-	line-height: 1em
-	padding    : 10px 15px
-	+transition( all 600ms ease-in-out )
-	//:hover
-	&:hover 
-		+scale( 1.2 ) 
 
