@@ -3,7 +3,7 @@
 /**-- SECCION RELACIONADA AL BLOG --------------------------**/
 /*************************************************************/
 
-/** Contenedor de los preview **/
+/** Contenedor de los preview Carousel **/
 #container-article-preview
 	border-right: 5px solid white 
 	padding     : 0 0 35px
@@ -42,38 +42,58 @@ article.itemPreviewPost
 		text-decoration: none 
 
 
+/**
+  * Contenedor De 
+  * Página de Blog
+  */
+.sectionContainerBlog
+	padding : 100px 0
 
-
+	//Sobreescribir item preview
+	.itemPreviewPost
+		border   : 1px solid #EFEFEF
+		margin   : 0 5px 25px 0
+		max-width: initial
+		width    : calc( (100%/3) - ((2*5px)/3) )
+		//Tercer y ultimo elemento
+		&:last-child , &:nth-child(3)
+			margin-right: 0
 
 /***************************************************************************************/
 /**-- SIDEBAR DE CATEGORIAS --------------------------------------------------**/
 /***************************************************************************************/
 
 .sidebarCategories
-	font-family : "SerifBeta", sans-serif
+	padding : 0 20px
 
 	//Título 
 	h2.title-sidebar
-		border     : 1px solid #D0A63E
-		color      : black 
-		font-size  : 19px 
-		font-weight: 600
-		line-height: 1
-		margin     : 0 auto 12px
-		padding    : 17px 25px 
+		color         : black 
+		font-size     : 17px 
+		line-height   : 1
+		margin        : 0 auto 20px
+		text-transform: uppercase 
 
 	//Item Link
 	a.item-link
-		border-bottom  : 1px solid rgba(0,0,0,.1)
-		color          : #8A8A8A
-		display        : block 
-		padding        : 13px 0
-		text-decoration: none !important
 		+transition( all 500ms ease-in )
-		//Icon
-		i 
-			font-size: 10px
-			margin   : 0 10px 0 0
+		color          : gray
+		display        : block 
+		font-size      : 15px
+		margin         : 0 0 10px
+		text-decoration: none !important
+
+		//before 
+		&:before 
+			+border-radius( 50% )
+			background    : gray 
+			content       : ""
+			display       : inline-block
+			height        : 4px 
+			margin-right  : 10px 
+			vertical-align: middle
+			width         : 4px 
+
 		//:hover 
 		&:hover , &.active
-			color : #D0A63E
+			color : silver

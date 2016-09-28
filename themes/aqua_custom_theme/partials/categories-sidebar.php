@@ -26,7 +26,8 @@ $current_id = isset($id_current_actual) ? $id_current_actual : '';
 		<a href="<?= get_term_link( $categoria ); ?>" class="item-link <?= $categoria->term_id === $current_id ? 'active' : '' ?>"> 
 				
 			<!-- Icono -->
-			<i class="fa fa-chevron-right" aria-hidden="true"></i>
+			<!--i class="fa fa-chevron-right" aria-hidden="true"></i-->
+			
 			<!--  -->
 			<?= $categoria->name; ?> 
 		</a>

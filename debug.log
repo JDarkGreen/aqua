@@ -14,3 +14,51 @@
 [28-Sep-2016 19:45:46 UTC] PHP Notice:  Undefined variable: input_ids_img in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\functions\custom-functions\functions-gallery-post.php on line 27
 [28-Sep-2016 19:46:11 UTC] PHP Notice:  Undefined variable: input_ids_img in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\functions\custom-functions\functions-gallery-post.php on line 27
 [28-Sep-2016 19:46:21 UTC] PHP Notice:  Undefined variable: input_ids_img in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\functions\custom-functions\functions-gallery-post.php on line 27
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:46 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 91
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:07:58 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:09:52 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 89
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 76
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 77
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 82
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 88
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Undefined variable: entrada in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
+[28-Sep-2016 21:19:04 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\page-blog.php on line 97
