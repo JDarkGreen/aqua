@@ -3,6 +3,14 @@
   * ARCHIVO PARTIAL QUE MUESTRA 
   * CAROUSEL DE ULTIMOS PRODUCTOS
 ***/
+
+/*
+ * Obtener Página de Productos
+ */
+$page_products      = get_page_by_title('Productos');
+$link_page_products = !empty($page_products) ? get_permalink($page_products->ID) : '#';
+
+
 ?>
 
 <section class="sectionPreviewProducts">
@@ -106,7 +114,7 @@
 
 
 		<!-- Boton ver más productos -->
-		<a href="" class="pull-xs-right btn-show-more text-uppercase"> ver más </a>
+		<a href="<?= $link_page_products; ?>" class="pull-xs-right btn-show-more text-uppercase"> ver más </a>
 
 		<div class="clearfix"></div>
 

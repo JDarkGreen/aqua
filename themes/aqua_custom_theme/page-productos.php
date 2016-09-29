@@ -31,7 +31,7 @@ include( locate_template('partials/banner-top-page.php') );
  */ 
 
 //Items por página
-$posts_per_page = 8; 
+$posts_per_page = 16; 
 //Variable de paginación
 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 

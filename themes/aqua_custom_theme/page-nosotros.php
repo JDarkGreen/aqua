@@ -26,6 +26,12 @@ $options = get_option("theme_settings");
 
 include( locate_template('partials/banner-top-page.php') );
 
+/*
+ * Importar Sección de Página Nosotros
+ */
+
+include( locate_template('partials/nosotros/section-nosotros.php') );
+
 
 /*
  * Importar Sección Staff

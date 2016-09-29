@@ -3,7 +3,7 @@
   * ARCHIVO PARTIAL QUE MUESTRA EL BANNER HACIA EL CONTACTO
 ***/
 
-$page_contacto      = get_page_by_title('contactenos');
+$page_contacto      = get_page_by_title('Contacto');
 
 $page_contacto_link = !empty($page_contacto) ? get_permalink( $page_contacto->ID ) : '#';
 

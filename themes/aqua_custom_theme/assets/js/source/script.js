@@ -271,9 +271,9 @@ function getWidthBrowser()
 				j.post( url + '/email/enviar.php', 
 				{ 
 					name   : j("#input_name").val(),
-					address: j("#input_address").val(),
 					email  : j("#input_email").val(),
 					phone  : j("#input_phone").val(),
+					address: j("#input_address").val(),
 					message: j("#input_message").val(),
 					
 				},function(data){
@@ -281,9 +281,9 @@ function getWidthBrowser()
 					alert( data );
 
 					j("#input_name").val("");
-					j("input_address").val("");
 					j("#input_email").val("");
 					j("#input_phone").val("");
+					j("input_address").val("");
 					j("#input_message").val("");
 
 					window.location.reload(false);

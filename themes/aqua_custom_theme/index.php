@@ -37,11 +37,28 @@
 	 * Importar partial de contacto
 	 */
 	include( locate_template('partials/products/carousel-products.php') );
+?>
 
-	/*
-	 * Importar partial de miscelaneo
-	 */
-	include( locate_template('partials/home/section-miscelaneo.php') );
+<!-- Wrapper de Contenido / Contenedor Layout -->
+<div class="pageWrapperLayout containerRelative">
+	
+	<!-- Título -->
+	<h2 class="titleCommon__section text-xs-center"> <span> Nosotros </span> </h2>
+
+</div> <!-- /.pageWrapperLayout containerRelative -->
+
+<?php
+
+/*
+ * Importar Sección de Página Nosotros
+ */
+
+include( locate_template('partials/nosotros/section-nosotros.php') );
+
+/*
+ * Importar partial de miscelaneo
+ */
+include( locate_template('partials/home/section-miscelaneo.php') );
 ?>
 
 <!-- Footer -->
