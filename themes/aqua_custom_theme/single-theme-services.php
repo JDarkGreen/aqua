@@ -50,7 +50,7 @@ include( locate_template('partials/banner-top-page.php') );
 
 		<!-- Boton ver servicios -->
 		<div class="text-xs-center">
-			<a href="#" class="btn-show-more text-uppercase"> ver servicios </a>
+			<a href="<?= get_permalink($page_servicios->ID) ?>" class="btn-show-more text-uppercase"> ver servicios </a>
 		</div> <!-- /. -->
 
 	</div> <!-- /.container-text -->

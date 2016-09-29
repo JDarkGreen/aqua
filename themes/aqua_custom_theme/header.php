@@ -58,6 +58,49 @@
 
 <body <?php body_class(); ?>>
 
+
+<!-- Contenedor Header Mobile  -->
+<header class="mainHeader hidden-sm-up containerFlex containerAlignContent" canvas="">
+
+	<!-- Icono abrir menu lateral -->
+	<div class="icon-header">
+		<i class="js-toggle-mobile-nav fa fa-bars" data-id="id-container-menu" aria-hidden="true"></i>
+	</div><!-- /.icon-header -->
+
+	<!-- Logo -->
+	<h1 id="mainLogo">
+		<a href="<?= site_url(); ?>">
+			<img src="<?= $logo_theme_url; ?>" alt="<?php bloginfo('description'); ?>" class="img-fluid d-block m-x-auto" />
+		</a>
+	</h1> <!-- /.mainLogo -->
+
+	<!-- Icono abrir menu lateral derecha -->
+	<div class="icon-header">
+		<i class="js-toggle-mobile-nav fa fa-bars" data-id="id-container-post" aria-hidden="true"></i>
+	</div><!-- /.icon-header -->	
+
+</header> <!-- /.mainHeader -->
+
+<!-- Menu lateral Izquierda -->
+<div off-canvas="id-container-menu left push">
+
+	<aside class="sidebarMobile">
+		<?php include( locate_template('partials/main-navigation-small.php') ); ?>
+	</aside> <!-- /.sidebarMobile -->
+
+</div> <!-- /.id-container-menu left push -->
+
+
+<!-- Menu lateral Derecha -->
+<div off-canvas="id-container-post right push">
+
+	<aside class="sidebarMobile">
+		<?php include( locate_template('partials/categories-sidebar.php') ); ?>
+	</aside> <!-- /.sidebarMobile -->
+
+</div> <!-- /.id-container-menu left push -->
+
+
 <!-- Contenedor canvas wrapper para slider mobile -->
 <div canvas="container">
 	
@@ -84,9 +127,7 @@
 
 	</div> <!-- /#topBarHeader -->
 
-	<header id="mainHeader">
-
-
+	<header id="mainHeader" class="hidden-xs-down">
 		
 		<!-- Incluir Navegación -->
 		<?php include(locate_template('partials/main-menu-navigation.php')); ?>

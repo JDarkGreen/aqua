@@ -43,7 +43,7 @@
 
 				<!-- Imagen Destacada -->
 				<?php if( has_post_thumbnail() ) :  ?>
-					<?php the_post_thumbnail('full', array('class'=>'img-fluid') ); ?>
+					<?php the_post_thumbnail('full', array('class'=>'') ); ?>
 				<?php endif; ?>
 				
 
@@ -62,7 +62,7 @@
 
 						<?php  
 							//Página contacto
-							$page_contact = get_page_by_title('contactenos');
+							$page_contact = get_page_by_title('Contacto');
 							$page_contact_link = !empty($page_contact) ? get_permalink($page_contact->ID) : '#'; 
 						?>
 						
