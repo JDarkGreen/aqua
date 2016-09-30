@@ -1,2 +1,5 @@
 [29-Sep-2016 17:15:15 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\partials\products\carousel-products.php on line 11
 [29-Sep-2016 17:15:17 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\xampp\htdocs\spa\wp-content\themes\aqua_custom_theme\partials\products\carousel-products.php on line 11
+[30-Sep-2016 15:34:00 UTC] PHP Warning:  mysqli_real_connect():  in C:\xampp\htdocs\spa\wp-includes\wp-db.php on line 1529
+[30-Sep-2016 15:34:00 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in C:\xampp\htdocs\spa\wp-includes\wp-db.php on line 1559
+[30-Sep-2016 15:34:02 UTC] PHP Warning:  mysql_connect():  in C:\xampp\htdocs\spa\wp-includes\wp-db.php on line 1559
